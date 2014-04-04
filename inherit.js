@@ -9,23 +9,6 @@
   var objectCreate = Object.create;
   var fnTest = /xyz/.test(function(){xyz;}) ? /\b_super\b/ : /.*/;
 
-  // Provide simple ES5 Object.create method if missing
-  if (!objectCreate) {
-    objectCreate = (function() {
-      function F() {}
-
-      return function(obj) {
-        if (obj !== null || typeof obj !== 'object') {
-          throw new Error('Object prototype may only be an Object or null');
-        }
-
-        F.prototype = obj || {};
-
-        return new F();
-      };
-    });
-  }
-
   // The BaseClass implementation (does nothing)
   function BaseClass() {}
 
