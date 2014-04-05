@@ -1,6 +1,6 @@
 #InheritJS
 
-A simple JavaScript inheritance library for ES5 using Object.create(), inspired
+A simple JavaScript inheritance library for ES5 inspired
 by John Resig's [Simple JavaScript Inheritance](http://ejohn.org/blog/simple-javascript-inheritance/).
 
 ## Example
