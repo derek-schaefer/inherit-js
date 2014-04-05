@@ -1,0 +1,14 @@
+{
+  "name": "inherit-js",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com:derek-schaefer/inherit-js.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-node": "~1.14.3"
+  }
+}

@@ -6,7 +6,6 @@
 
   'use strict';
 
-  var objectCreate = Object.create;
   var fnTest = /xyz/.test(function(){xyz;}) ? /\b_super\b/ : /.*/;
 
   // The BaseClass implementation (does nothing)
@@ -18,7 +17,7 @@
 
     // Instantiate a base class (but only create the instance,
     // don't run the init constructor)
-    var proto = objectCreate(_super);
+    var proto = Object.create(_super);
 
     // Copy the properties over onto the new prototype
     for (var name in props) {
