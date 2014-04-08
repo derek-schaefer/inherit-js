@@ -3,6 +3,8 @@
 A simple JavaScript inheritance library for ES5 inspired
 by John Resig's [Simple JavaScript Inheritance](http://ejohn.org/blog/simple-javascript-inheritance/).
 
+If you want to use this library in a non-ES5 environment, consider including [es5-shim](https://github.com/es-shims/es5-shim).
+
 ## Example
 
 ```javascript
