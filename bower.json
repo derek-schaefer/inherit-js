@@ -1,0 +1,24 @@
+{
+  "name": "inherit-js",
+  "version": "0.1.0",
+  "description": "A simple JavaScript inheritance library for ES5",
+  "main": "inherit.js",
+  "license": "MIT",
+  "homepage": "git@github.com:derek-schaefer/inherit-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:derek-schaefer/inherit-js.git"
+  },
+  "authors": [
+    "Derek Schaefer <derek.schaefer@gmail.com> (https://github.com/derek-schaefer)"
+  ],
+  "keywords": [
+    "javascript",
+    "inheritance",
+    "es5"
+  ],
+  "ignore": [
+    "**/.*",
+    "specs"
+  ]
+}
