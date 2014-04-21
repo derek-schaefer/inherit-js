@@ -1,4 +1,4 @@
-#InheritJS
+#InheritJS [![Build Status](https://secure.travis-ci.org/derek-schaefer/inherit-js.png?branch=master)](http://travis-ci.org/derek-schaefer/inherit-js)
 
 A simple JavaScript inheritance library for ES5 inspired
 by John Resig's [Simple JavaScript Inheritance](http://ejohn.org/blog/simple-javascript-inheritance/).
