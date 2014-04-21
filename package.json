@@ -7,6 +7,9 @@
     "type": "git",
     "url": "http://github.com:derek-schaefer/inherit-js.git"
   },
+  "scripts": {
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+  },
   "dependencies": {},
   "devDependencies": {
     "jasmine-node": "~1.14.3"
