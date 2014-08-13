@@ -1,6 +1,6 @@
 {
   "name": "inherit-js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple JavaScript inheritance library for ES5",
   "main": "inherit.js",
   "license": "MIT",
