@@ -13,20 +13,17 @@
     }
 
     for (var key in props) {
-      if (typeof props[key] === 'function' && typeof parent[key] === 'function') {
-        child[key] = (function(key, fn) {
-          return function() {
-            var tmp = this._super;
-            this._super = parent[key];
-            var rval = fn.apply(this, arguments);
-            this._super = tmp;
-            return rval;
-          };
-        })(key, props[key]);
-      } else {
-        child[key] = props[key];
-      }
+      child[key] = props[key];
     }
+
+    child._super = function(name) {
+      var tmp = this._super;
+      this._super = parent._super;
+      var rval = parent[name].apply(this,
+        Array.prototype.slice.call(arguments, 1));
+      this._super = tmp;
+      return rval;
+    };
 
     var newClass = child.init;
     newClass.prototype = child;

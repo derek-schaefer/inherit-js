@@ -14,11 +14,11 @@ describe('InheritJS', function() {
 
   var Ninja = Person.extend({
     init: function() {
-      this._super(false);
+      this._super('init', false);
     },
     dance: function() {
       // Call the inherited version of dance()
-      return this._super();
+      return this._super('dance');
     },
     swingSword: function() {
       return true;

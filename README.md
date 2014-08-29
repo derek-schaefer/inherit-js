@@ -9,23 +9,23 @@ If you want to use this library in a non-ES5 environment, consider including [es
 
 ```javascript
 var Person = Class.extend({
-  init: function(isDancing){
+  init: function(isDancing) {
     this.dancing = isDancing;
   },
-  dance: function(){
+  dance: function() {
     return this.dancing;
   }
 });
 
 var Ninja = Person.extend({
-  init: function(){
-    this._super( false );
+  init: function() {
+    this._super('init', false);
   },
-  dance: function(){
+  dance: function() {
     // Call the inherited version of dance()
-    return this._super();
+    return this._super('dance');
   },
-  swingSword: function(){
+  swingSword: function() {
     return true;
   }
 });
